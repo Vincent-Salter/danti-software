@@ -1,0 +1,7 @@
+# Render Blueprint: a free static site. No build step; the repo root is published as is.
+services:
+  - type: web
+    name: danti-software
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: .
