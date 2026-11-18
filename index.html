@@ -1,21 +1,48 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Danti Software</title>
-  <meta name="description" content="Projects by Danti Software.">
+  <meta name="description" content="Danti Software Ltd: the company behind Danti and Daowire.">
+  <meta name="theme-color" content="#0B0A09">
+  <link rel="icon" href="img/favicon.ico" sizes="48x48">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="preload" href="fonts/geist-semibold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main>
-    <h1>Danti Software</h1>
-    <!-- To add a project, copy one <a> line and change the link and name. -->
-    <nav class="projects">
-      <a class="project" href="https://danti.uk">Danti</a>
-      <a class="project" href="#">Daowire</a>
+    <header class="head">
+      <span class="wordmark">
+        <!-- The Danti mark: the same drawing as the Danti website's logo and favicon. -->
+        <svg class="mark" viewBox="0 0 32 32" aria-hidden="true">
+          <rect x="3" y="4" width="26" height="15" rx="4" class="mark-body"/>
+          <rect x="7" y="15" width="18" height="2.4" rx="1.2" class="mark-slot"/>
+          <path d="M9 16.5h14v11.5l-2.3-1.4-2.4 1.4-2.3-1.4-2.3 1.4-2.4-1.4L9 28z" class="mark-sheet"/>
+          <circle cx="23.5" cy="9" r="2" class="mark-light"/>
+        </svg>
+        <span class="wordmark-name">Danti</span>
+      </span>
+      <h1>Danti Software</h1>
+      <p class="eyebrow">Projects</p>
+    </header>
+
+    <!-- To add a project, copy one <a class="project"> block and change the link, name and label. -->
+    <nav class="projects" aria-label="Projects">
+      <a class="project" href="https://danti.uk">
+        <span class="name">Danti</span>
+        <span class="label">Documents</span>
+      </a>
+      <a class="project" href="#">
+        <span class="name">Daowire</span>
+        <span class="label">Governance API</span>
+      </a>
     </nav>
   </main>
-  <footer>© 2026 Danti Software Ltd</footer>
+
+  <footer class="foot">© 2026 Danti Software Ltd</footer>
 </body>
 </html>
